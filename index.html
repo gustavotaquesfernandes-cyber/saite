@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carro Racing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <h1>Carro Racing</h1>
+
+      <div class="hud">
+        <span>Pontuação: <strong id="score">0</strong></span>
+        <span>Melhor: <strong id="bestScore">0</strong></span>
+      </div>
+
+      <canvas id="gameCanvas" width="900" height="600" aria-label="Jogo de carro"></canvas>
+
+      <div class="controls">
+        <button id="startBtn" type="button">Iniciar</button>
+        <button id="restartBtn" class="secondary" type="button">Reiniciar</button>
+      </div>
+
+      <p class="legend">Controles: ← → ou A/D para virar • ↑ / W para acelerar • ↓ / S para frear</p>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
